@@ -36,6 +36,7 @@ export DB_PASSWORD=secret
 
 # Запустить приложение
 python app/app.py
+```
 
 ## 🐳 Запуск через Docker
 
@@ -45,15 +46,16 @@ python app/app.py
 
 ### Установка и запуск:
 
-\`\`\`bash
+```bash
 cp .env.example .env
 # отредактируйте .env, указав свои значения
 docker compose up -d --build
-\`\`\`
+```
 
 Приложение будет доступно на `http://localhost/`.
 
 Проверка здоровья:
-\`\`\`bash
+
+```bash
 curl http://localhost/health
-\`\`\`
+```
